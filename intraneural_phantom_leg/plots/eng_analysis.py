@@ -3,11 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.cbook import boxplot_stats
 from scipy.interpolate import make_interp_spline
-from intraneural_phantom_leg.utils.utils_functions import extracting_array_from_excel
 
 #Loading Source Data File
 #Running the code from intraneural_phantom_leg
-file_path = '../Source Data File.xlsx'
+file_path = 'Source Data File.xlsx'
 sheet_name = 'Figure 2A-2F'
 df = pd.read_excel(file_path, sheet_name=sheet_name, engine='openpyxl')
 fs = 2000
@@ -156,7 +155,7 @@ sheet_name = 'Figure 2D-4B-4C-5B-S3-S6B'
 df2 = pd.read_excel(file_path, sheet_name=sheet_name, engine='openpyxl')[0:7]
 
 def extracting_array_from_excel(df, row):
-    results = np.array([el for el in df.iloc[row] if el != np.NaN and el not in ['Ankle', 'Knee', 'Toes','Flexion', 'Extension']])
+    results = np.array([el for el in df.iloc[row] if el != np.nan and el not in ['Ankle', 'Knee', 'Toes','Flexion', 'Extension']])
     # Remove NaN values
     return results[~np.isnan(results)]
 

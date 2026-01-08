@@ -48,11 +48,13 @@ pip install -r requirements.txt
 2. Run the plotting scripts:
     ```powershell
     # From repository root:
-    python [decoding_results.py](http://_vscodecontentref_/9)
+    python ./intraneural_phantom_leg/plots/eng_analysis.py
+    python ./intraneural_phantom_leg/plots/decoding_results.py
     # Or run notebooks using:
-    jupyter notebook [decoding_results.ipynb](http://_vscodecontentref_/10)
+    jupyter notebook ./intraneural_phantom_leg/plots/eng_analysis.ipynb
+    jupyter notebook ./intraneural_phantom_leg/plots/decoding_results.ipynb
 
-This will save the figure files (SVG and image) into your current working directory.
+This will save the figure files (SVG and image) into the repository root.
 
 ---
 ## 🧑‍💻 Author
