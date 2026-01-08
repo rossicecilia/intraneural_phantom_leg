@@ -43,7 +43,7 @@ pip install -r requirements.txt
 1. Place the Source Data File.xlsx at the repository root (or change the file_path variables in the plotting scripts).
 
     - intraneural_phantom_leg/plots/decoding_results.py expects ../../Source Data File.xlsx when run from intraneural_phantom_leg/plots
-    intraneural_phantom_leg/plots/eng_analysis.py is written assuming it is run from intraneural_phantom_leg (it uses ../Source Data File.xlsx), so either run it from there or update the path accordingly.
+    - intraneural_phantom_leg/plots/eng_analysis.py is written assuming it is run from intraneural_phantom_leg (it uses ../Source Data File.xlsx), so either run it from there or update the path accordingly.
 
 2. Run the plotting scripts:
     ```powershell
