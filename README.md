@@ -19,6 +19,22 @@ https://www.medrxiv.org/content/10.1101/2025.08.21.25333903v1.full.pdf
 - `Source Data File.xlsx` — **required** source data (not included in this repo)
 
 ---
+## Usage — reproduce figures 🖼️
+1. Place the Source Data File.xlsx at the repository root (or change the file_path variables in the plotting scripts).
+
+    - intraneural_phantom_leg/plots/decoding_results.py expects ../../Source Data File.xlsx when run from intraneural_phantom_leg/plots
+    intraneural_phantom_leg/plots/eng_analysis.py is written assuming it is run from intraneural_phantom_leg (it uses ../Source Data File.xlsx), so either run it from there or update the path accordingly.
+
+2. Run the plotting scripts:
+    ```powershell
+    # From repository root:
+    python [decoding_results.py](http://_vscodecontentref_/9)
+    # Or run notebooks using:
+    jupyter notebook [decoding_results.ipynb](http://_vscodecontentref_/10)
+
+This will save the figure files (SVG and image) into your current working directory.
+
+---
 
 ## Requirements & setup ⚙️
 
@@ -29,22 +45,3 @@ PowerShell (Windows) quick setup:
 python -m venv .venv; .\.venv\Scripts\Activate.ps1
 pip install --upgrade pip
 pip install -r requirements.txt
-
----
-
-## Usage — reproduce figures 🖼️
-1. Place the Source Data File.xlsx at the repository root (or change the file_path variables in the plotting scripts).
-
-    - intraneural_phantom_leg/plots/decoding_results.py expects ../../Source Data File.xlsx when run from intraneural_phantom_leg/plots
-    intraneural_phantom_leg/plots/eng_analysis.py is written assuming it is run from intraneural_phantom_leg (it uses ../Source Data File.xlsx), so either run it from there or update the path accordingly.
-
-2. Run the plotting scripts:
-
-    # From repository root:
-    python [decoding_results.py](http://_vscodecontentref_/9)
-    # Or run notebooks using:
-    jupyter notebook [decoding_results.ipynb](http://_vscodecontentref_/10)
-
-This will save the figure files (SVG and image) into your current working directory.
-
----
