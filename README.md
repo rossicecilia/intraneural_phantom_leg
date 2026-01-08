@@ -23,6 +23,7 @@ We observed multiunit activity associated with volitional phantom movements of t
   - `utils/` — small helper utilities (`utils_functions.py`, etc.)
 - `Source Data File.xlsx` — **required** source data (included in this repo)
 - `requirements.txt` — requirement file cointaining the project dependencies
+\n
 **training** and **utils** directories are currently work in progress. They will contain functions useful not only to process, encoding in form of events and decode electroneurographic signals, but also to implement the machine learning classifiers (such as SVM and MLP) and spiking neural network (SNNs) decoders. 
 ---
 ## Requirements & setup ⚙️
