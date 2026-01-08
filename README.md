@@ -1,4 +1,4 @@
-# Decoding phantom limb movements from intraneural recordings ✅
+# Decoding phantom limb movements from intraneural recordings 
 
 Code associated with the paper: **"Decoding phantom limb movements from intraneural recordings"**  
 Authors: Rossi, C., Bumbasirevic, M., Čvančara, P., Stieglitz, T., Raspopovic, S., Donati, E., & Valle, G. (2025). Decoding phantom
