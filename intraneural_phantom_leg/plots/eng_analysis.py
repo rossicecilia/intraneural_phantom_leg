@@ -155,6 +155,11 @@ plt.show()
 sheet_name = 'Figure 2D-4B-4C-5B-S3-S6B'
 df2 = pd.read_excel(file_path, sheet_name=sheet_name, engine='openpyxl')[0:7]
 
+def extracting_array_from_excel(df, row):
+    results = np.array([el for el in df.iloc[row] if el != np.NaN and el not in ['Ankle', 'Knee', 'Toes','Flexion', 'Extension']])
+    # Remove NaN values
+    return results[~np.isnan(results)]
+
 #Loading data
 averages_peaks_ankle = extracting_array_from_excel(df2, 1)
 averages_peaks_knee = extracting_array_from_excel(df2, 2)

@@ -3,13 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #Loading Source Data File
-file_path = '../../Source Data File.xlsx'
+file_path = 'Source Data File.xlsx'
 sheet_name = 'Figure 2D-4B-4C-5B-S3-S6B'
 df = pd.read_excel(file_path, sheet_name=sheet_name, engine='openpyxl')
 chance_level = [100/6, 100/4]
 
 def extracting_array_from_excel(df, row):
-    results = np.array([el for el in df.iloc[row] if el not in ['Enc', 'Thr', 'Double', 'SNN', 'SVM', 'MLP', 'imEMG', 'ENG', 'imEMG+ENG']])
+    results = np.array([el for el in df.iloc[row] if el not in ['Enc', 'Thr', 'Double', 'SNN', 'SVM', 'MLP', 'imEMG', 'ENG', 'imEMG+ENG', 'MLP rms', 'SVM rms', 'SVM power', 'MLP power', 'MLP spike rate', 'SVM spike rate', 'TIME1', 'TIME2', 'TIME3', 'TIME4']])
     # Remove NaN values
     return results[~np.isnan(results)]
 
