@@ -34,7 +34,7 @@ Recommended: Python 3.8+ and a virtual environment.
 PowerShell (Windows) quick setup:
 ```powershell
 python -m venv .venv; .\.venv\Scripts\Activate.ps1
-pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
